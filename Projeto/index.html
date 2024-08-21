@@ -12,15 +12,19 @@
     <header>
         <div id="seg_container">
             <div id="container">
-                <div>
-
+                <div id="icone_esquerdo">
+                    <img id="menu" src="image/menu.png" alt="barra de menu">
+                    <abbr title="Página Inicial do Youtube"><img id="logo" src="image/logo_youtube.png" alt="Logo do YouTube"></abbr>
                 </div>
                 <div id="navegacao">
-                    <input id="search" autocapitalize="none" autocomplete="off" autocorrect="on" name="search_query" tabindex="0" type="text" spellcheck="false" placeholder="Pesquisar" aria-label="Pesquisar" role="combobox" aria-haspopup="false" aria-autocomplete="list" class="gsfi ytd-searchbox" dir="ltr" >
-                    <button><abbr title="Pesquisar"><i class="fa fa-search"></abbr></i></button>
+                    <input id="search-input" tabindex="0" type="text" placeholder="Pesquisar">
+                    <button id="search-button" ><abbr title="Pesquisar"><i  tabindex="1" class="fa fa-search"></abbr></i></button>
+                    <img id="icone_microfone" src="image/imagem3.jpg" alt="Microfone">
                 </div>
-                <div>
-
+                <div id="icone_direito">
+                    <abbr title="Criar"><img  tabindex="2" class="icones" id="sem_margin" src="image/icone_camera.png" alt="icone da camera "></abbr>
+                    <abbr title="Notificações"><img class="icones"  src="image/icone_sino.png" alt="icone das notificações"></abbr>
+                    <img src="image/icone.jpg" alt="icone da imagem do usuário">
                 </div>
             </div>
         </div>
@@ -31,5 +35,15 @@
     <footer>
 
     </footer>
+    <script>
+        document.getElementById("search-button").addEventListener("click", function() {
+            var query = document.getElementById("search-input").value;
+            if(query) {
+                window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+            } else {
+                alert("Por favor, insira um termo de pesquisa.");
+            }
+        });
+    </script>
 </body>
 </html>
