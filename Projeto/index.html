@@ -17,7 +17,7 @@
                     <abbr title="Página Inicial do Youtube"><img id="logo" src="image/logo_youtube.png" alt="Logo do YouTube"></abbr>
                 </div>
                 <div id="navegacao">
-                    <input id="search-input" tabindex="0" type="text" placeholder="Pesquisar">
+                    <input id="search-input" tabindex="0" type="search" placeholder="Pesquisar">
                     <button id="search-button" ><abbr title="Pesquisar"><i  tabindex="1" class="fa fa-search"></abbr></i></button>
                     <img id="icone_microfone" src="image/imagem3.jpg" alt="Microfone">
                 </div>
@@ -37,9 +37,9 @@
     </footer>
     <script>
         document.getElementById("search-button").addEventListener("click", function() {
-            var query = document.getElementById("search-input").value;
-            if(query) {
-                window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(query)}`;
+            var pesquisa = document.getElementById("search-input").value;
+            if(pesquisa) {
+                window.location.href = `https://www.youtube.com/results?search_query=${encodeURIComponent(pesquisa)}`;
             } else {
                 alert("Por favor, insira um termo de pesquisa.");
             }
