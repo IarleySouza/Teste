@@ -176,6 +176,19 @@ h3 {
     background: url(../image/imagem2.png) no-repeat;
     background-size: contain;
 }
+#img4 {
+    background: url(../image/img5.png) no-repeat;
+    background-size: contain;
+}
+#img5 {
+    background: url(../image/img6.png) no-repeat;
+    background-size: contain;
+
+}
+#img5:hover {
+    opacity: 70%;
+    transition: 0.5s all;
+}
 p {
     margin-top: 5px;
     line-height: 1.4;
