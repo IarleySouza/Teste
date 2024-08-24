@@ -7,6 +7,9 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    background-color: var(--primary_color);
+}
 main {
     height: 80%;
     width: auto;
@@ -17,15 +20,11 @@ header {
     position: fixed;
     background-color: var(--primary_color);
 }
-
 :root {
     --primary_color: #0f0f0f;
     --secondary_color: #303030;
 }
 
-body {
-    background-color: var(--primary_color);
-}
 #icone_direito {
     display: flex;
     align-items: center;
@@ -140,20 +139,18 @@ nav {
 }
 section{
     padding-left: 60px;
-    padding-top: 90px;
+    padding-top: 60px;
     display: flex;
-
     justify-content: center;
 }
+.cima {
+    padding-top: 90px;
+}
 .imagem {
-    margin: 20px;
+    margin: 0px 10px;
     border-radius: 20px;
     width: 360px;
     height: 210px;
-    background: url(../image/imgemcurso.png) no-repeat;
-    background-size: contain;
-    background-position: right center;
-    padding-top: 10px;
     cursor: pointer;
 }
 h3 {
@@ -162,30 +159,37 @@ h3 {
     width: 350px;
     cursor: pointer;
 }
-
+#blocos > div > div {
+    background-size: contain;
+}
 #img1 {
     background: url(../image/img4.png) no-repeat;
-    background-size: contain;
 }
 #img2 {
     background: url(../image/imgemcurso.png) no-repeat;
-    background-size: contain;
-    background-position: right center;
 }
 #img3 {
     background: url(../image/imagem2.png) no-repeat;
-    background-size: contain;
 }
 #img4 {
     background: url(../image/img5.png) no-repeat;
-    background-size: contain;
 }
 #img5 {
     background: url(../image/img6.png) no-repeat;
-    background-size: contain;
-
 }
-#img5:hover {
+#img6 {
+    background: url(../image/img7.png);
+}
+#img7 {
+    background: url(../image/img8.png) no-repeat;
+}
+#img8 {
+    background: url(../image/img9.png) no-repeat;
+}
+#img9 {
+    background: url(../image/img10.png) no-repeat;
+}
+#blocos > div > div:hover {
     opacity: 70%;
     transition: 0.5s all;
 }
