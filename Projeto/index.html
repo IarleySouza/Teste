@@ -12,7 +12,7 @@
     <header>
         <div id="seg_container">
             <div id="container">
-                <div id="icone_esquerdo">
+                <div id="icone_esquerdo" onclick="menuBurguer()">
                     <img id="menu" src="image/menu.png" alt="barra de menu">
                     <abbr title="Página Inicial do Youtube"><img id="logo" src="image/logo_youtube.png" alt="Logo do YouTube"></abbr>
                 </div>
@@ -27,7 +27,7 @@
                     <img src="image/icone.jpg" alt="icone da imagem do usuário">
                 </div>
             </div>
-            <nav>
+            <nav id="itens" >
                 <a href="#">
                     <abbr title="Inicio"><img class="nav" src="image/inicio.png" alt="Botão de inicio"></abbr>
                 </a>
@@ -98,10 +98,15 @@
             </div>
         </section>
     </main>
-    
-    <footer>
-
-    </footer>
-    
+    <script>
+        function menuBurguer() {
+            if (itens.style.display == 'flex') {
+                itens.style.display = 'none'
+            }
+            else {
+                itens.style.display = 'flex'
+            }
+        }
+    </script>
 </body>
 </html>
